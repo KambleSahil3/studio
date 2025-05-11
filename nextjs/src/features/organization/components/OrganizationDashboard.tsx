@@ -188,13 +188,6 @@ export const OrganizationDashboard = ({
           </CardContent>
         </Card>
       </div>
-      {/* <CreateOrganizationModal
-        open={openEditModal}
-        setOpen={setOpenEditModal}
-        setMessage={setError}
-        mode={mode}
-        orgData={orgData}
-      /> */}
    {
     walletStatus === true ? (
 
@@ -202,7 +195,7 @@ export const OrganizationDashboard = ({
 
     ): (
     <Button 
-      onClick={() => router.push(`/organizations/agent-config?organizationId=${orgIdOfDashboard}`)}
+      onClick={() => router.push(`/organizations/agent-config?orgId=${orgIdOfDashboard}`)}
     >
       Setup Your Wallet
     </Button>

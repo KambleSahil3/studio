@@ -8,22 +8,22 @@ interface IProps {
 }
 
 const GenerateButtonPolygon = ({ generatePolygonKeyValuePair, loading }: IProps) => (
-  <div className="my-3 relative grid grid-cols-2 gap-x-9 md:gap-56 w-fit">
-    <div className="mt-4">
-      <Label htmlFor="generateKey">Generate private key</Label>
-      <span className="text-destructive text-xs">*</span>
-    </div>
-
-    <Button
-      id="generateKey"
-      type="button"
-      isLoading={loading}
-      className=""
-      onClick={generatePolygonKeyValuePair}
-    >
-      Generate
-    </Button>
+<div className="my-3 flex items-center justify-between w-full">
+  <div className="flex items-center">
+    <Label htmlFor="generateKey">Generate private key</Label>
+    <span className="text-destructive text-xs">*</span>
   </div>
+
+  <Button
+    id="generateKey"
+    type="button"
+    isLoading={loading}
+    className="ml-4"
+    onClick={generatePolygonKeyValuePair}
+  >
+    Generate
+  </Button>
+</div>
 );
 
 export default GenerateButtonPolygon;

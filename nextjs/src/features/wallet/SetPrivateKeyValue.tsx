@@ -128,15 +128,6 @@ const SetPrivateKeyValueInput = ({
           {generatedKeys && (
             <>
               <div className="mt-3 relative flex items-center">
-                <Field
-                  as={Input}
-                  id="privatekey"
-                  name="privatekey"
-                  className="truncate w-[480px]"
-                  value={generatedKeys.privateKey.slice(2)}
-                  placeholder="Generated private key"
-                  readOnly
-                />
                 <CopyDid value={generatedKeys.privateKey.slice(2)} />
               </div>
 
